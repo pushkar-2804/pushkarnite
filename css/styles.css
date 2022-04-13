@@ -166,6 +166,11 @@ a {
   white-space: nowrap;
   text-align: center;
 }
+
+.btn--streched {
+  padding-left: 6rem;
+  padding-right: 6rem;
+}
 .btn--primary {
   background: var(--color-primary);
   color: #fff;
@@ -476,4 +481,79 @@ a {
   .testimonial .quote {
     margin-left: 6rem;
   }
+}
+
+/* Callouts */
+.callout {
+  border-radius: 4px;
+  padding: 4rem;
+}
+
+.callout--primary {
+  background-color: var(--color-primary);
+  color: #fff;
+}
+
+.callout__content {
+  text-align: center;
+}
+
+.callout__heading {
+  color: #fff;
+  font-size: 3rem;
+  margin-top: 0;
+}
+.callout .btn {
+  justify-self: center;
+  align-self: center;
+}
+
+@media screen and (min-width: 768px) {
+  .callout .grid--1x2 {
+    grid-template-columns: 1fr auto;
+  }
+  .callout__content {
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .callout .btn {
+    justify-self: start;
+    margin-left: 2rem;
+  }
+}
+
+/* Collapsible */
+.collapsible {
+  padding-left: 2rem;
+}
+.collapsible__header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.collapsible__heading {
+  margin-top: 0;
+  font-size: 3rem;
+}
+
+.collapsible__chevron {
+  transform: rotate(-90deg);
+  transition: transform 0.4s;
+}
+.collapsible__content {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: all 0.4s;
+}
+
+.collapsible--expanded .collapsible__chevron {
+  transform: rotate(0);
+}
+
+.collapsible--expanded .collapsible__content {
+  max-height: 100vh;
+  opacity: 1;
 }
