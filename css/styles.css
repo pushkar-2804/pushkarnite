@@ -331,6 +331,9 @@ a {
 }
 
 /* plans */
+.plan {
+  transition: transform 0.2s ease-out;
+}
 .plan__name {
   color: #fff;
   margin: 0;
@@ -358,6 +361,9 @@ a {
   margin-bottom: 2rem;
 }
 
+.plan--popular {
+  transform: scale(1.1);
+}
 .plan--popular .card__header {
   position: relative;
 }
@@ -369,6 +375,13 @@ a {
   position: absolute;
   top: 0px;
   right: 5%;
+}
+
+.plan:hover {
+  transform: scale(1.09);
+}
+.plan--popular:hover {
+  transform: scale(1.15);
 }
 
 @media screen and (min-width: 1024px) {
@@ -459,6 +472,9 @@ a {
 @media screen and (min-width: 768px) {
   .grid--1x2 {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .grid--1x3 {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -690,13 +706,13 @@ a {
 }
 
 /* Domain Block */
-.domain-block .input-group {
+.block-domain .input-group {
   box-shadow: 0 0 30px 20px #e6ebee;
   border: 0;
   margin: 4rem auto;
   max-width: 670px;
 }
-.domain-block__prices {
+.block-domain__prices {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 6rem);
@@ -708,7 +724,16 @@ a {
 }
 
 @media screen and (min-width: 768px) {
-  .domain-block__prices {
+  .block-domain__prices {
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
   }
+}
+
+/* Plans Block */
+.block-plans .grid {
+  gap: 8rem 4rem;
+}
+.block-plans .card {
+  max-width: 500px;
+  margin: 0 auto;
 }
