@@ -129,7 +129,6 @@ a {
 .list {
   list-style: none;
   padding-left: 0;
-  color: var(--color-headings);
 }
 
 .list--inline .list__item {
@@ -163,7 +162,7 @@ a {
   font-weight: 600;
   margin: 1rem 0rem;
   outline: 0;
-  padding: 2rem 3rem;
+  padding: 2rem 4vw;
   text-transform: uppercase;
   white-space: nowrap;
   text-align: center;
@@ -268,7 +267,7 @@ a {
   color: var(--color-headings);
   font-size: 2rem;
   outline: 0;
-  padding: 1.5rem 3, 5rem;
+  padding: 1.5rem 5rem;
 }
 
 .input-group {
@@ -281,6 +280,7 @@ a {
   border: 0;
   flex-grow: 1;
   padding: 1.5rem 2rem;
+  width: 0;
 }
 
 .input-group .btn {
@@ -587,7 +587,7 @@ a {
 /* Blocks */
 .block {
   --padding-vertical: 6rem;
-  padding: var(--padding-vertical) 2rem;
+  padding: var(--padding-vertical);
 }
 
 .block__header {
@@ -610,7 +610,7 @@ a {
 
 .block--skewed-right {
   padding-bottom: calc(var(--padding-vertical) + 4rem);
-  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 80%);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 92%);
 }
 
 .block--skewed-left {
@@ -700,7 +700,7 @@ a {
 
 @media screen and (min-width: 768px) {
   .hero {
-    padding-top: 0;
+    padding-top: 1rem;
   }
   .hero__content {
     text-align: left;
@@ -716,8 +716,9 @@ a {
   max-width: 670px;
 }
 .block-domain__prices {
+  color: var(--color-headings);
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 6rem);
   font-size: 2rem;
   font-weight: 600;
@@ -751,7 +752,7 @@ a {
   margin-top: 6rem;
 }
 .feature__heading {
-  margin-top: 1rem 0;
+  margin-top: 1rem;
 }
 .feature__image {
   width: 100%;
