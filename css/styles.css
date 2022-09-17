@@ -9,6 +9,7 @@
   --border-radius: 30px;
 }
 
+
 *,
 *::after,
 *::before {
@@ -537,6 +538,8 @@ a {
 .callout {
   border-radius: 4px;
   padding: 4rem;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .callout--primary {
